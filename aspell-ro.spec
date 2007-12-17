@@ -21,7 +21,6 @@ Group:         System/Internationalization
 Source:        ftp://ftp.gnu.org/gnu/aspell/aspell-%{languagecode}-%{src_ver}.tar.bz2
 URL:           http://aspell.net/
 License:	   Free
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires: aspell >= 0.50
 BuildRequires: make
