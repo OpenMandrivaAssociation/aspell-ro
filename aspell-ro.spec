@@ -16,7 +16,7 @@
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
 Version:       0.50.2
-Release:       %mkrel 8
+Release:       %mkrel 9
 Group:         System/Internationalization
 Source:        ftp://ftp.gnu.org/gnu/aspell/aspell-%{languagecode}-%{src_ver}.tar.bz2
 URL:           http://aspell.net/
@@ -30,6 +30,8 @@ BuildRequires: locales-fr
 
 # Mandriva Stuff
 Requires:      locales-%{languagecode}
+# aspell = 1, myspell = 2, lang-specific = 3
+Provides:      enchant-dictionary = 1
 Provides:      aspell-dictionary
 Provides:	   aspell-%{lc_ctype}
 Provides:      spell-%{languagecode} >= 0.50.2-5mdk
