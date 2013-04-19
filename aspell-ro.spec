@@ -7,7 +7,7 @@
 # an iso-8859-* locale; eg: LC_ALL=fr rpm -be specfile
 #
 
-%define src_ver 3.1
+%define src_ver 3.3-2
 
 %define languageenglazy Romanian
 %define languagecode ro
@@ -15,13 +15,12 @@
 
 Summary:       %{languageenglazy} files for aspell
 Name:          aspell-%{languagecode}
-Version:       3.1
-Release:       %mkrel 8
+Version:       3.3.2
+Release:       1
 Group:         System/Internationalization
-Source:        ftp://ftp.gnu.org/gnu/aspell/dict/ro/aspell5-ro-%version.tar.bz2
+Source:        ftp://ftp.gnu.org/gnu/aspell/dict/ro/aspell5-ro-%{src_ver}.tar.bz2
 URL:           http://aspell.net/
 License:	   Free
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires: aspell >= 0.50
 BuildRequires: make
@@ -53,7 +52,6 @@ export LC_ALL=fr
 %make
 
 %install
-rm -fr $RPM_BUILD_ROOT
 export LC_ALL=fr
 
 %makeinstall_std
@@ -61,11 +59,7 @@ export LC_ALL=fr
 #cp doc/README README.%{languagecode}
 chmod 644 README Copyright 
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc README Copyright
 %{_libdir}/aspell-*/*
 
