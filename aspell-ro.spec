@@ -16,7 +16,7 @@
 Summary:	%{languageenglazy} files for aspell
 Name:		aspell-%{languagecode}
 Version:	3.3.2
-Release:	6
+Release:	7
 Group:		System/Internationalization
 License:	Free
 Url:		http://aspell.net/
