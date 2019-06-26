@@ -15,7 +15,7 @@
 
 Summary:	%{languageenglazy} files for aspell
 Name:		aspell-%{languagecode}
-Version:	3.3.2
+Version:	3.3.10
 Release:	10
 Group:		System/Internationalization
 License:	Free
