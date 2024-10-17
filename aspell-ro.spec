@@ -19,7 +19,7 @@ Version:	3.3.10
 Release:	11
 Group:		System/Internationalization
 License:	Free
-Url:		http://aspell.net/
+Url:		https://aspell.net/
 Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/ro/aspell5-ro-%{src_ver}.tar.bz2
 
 BuildRequires:	aspell >= 0.50
