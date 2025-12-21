@@ -22,6 +22,11 @@ License:	Free
 Url:		https://aspell.net/
 Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/ro/aspell5-ro-%{src_ver}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	aspell >= 0.50
 BuildRequires:	locales-fr
 Requires:	aspell >= 0.50
